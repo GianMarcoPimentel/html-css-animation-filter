@@ -101,6 +101,7 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: reverse;
     /* 
     posso sintetizzare la scrittura cosi : 
     animation: caricamento 4s linear infinite;
@@ -110,6 +111,24 @@
 /* Indico tuttele carattestiche dell'animazione all'elemento che voglio animare, si da un name,una duration, interation-count (quando volte volgio che si ripeta,iteri il conteggio dell'animazione, e il timing-function in che modo voglio che funzioni */
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover {
+    animation: CaricamentoParziale 2s linear reverse ;
+}
+@keyframes CaricamentoParziale{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(0.75Turn);
+        animation-direction: reverse;
+
+    }
+   /*  100%{
+        transform: rotate(0.25Turn);
+        animation-direction: normal;
+    } */
+    /* arrivo a 3/4 del giro con 0.75 per poi tornare alla posiszione iniziale velocemente */
 }
 .ex-12-button, .ex-13-button {
     position: relative;
