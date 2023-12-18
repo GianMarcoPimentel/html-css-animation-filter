@@ -8,11 +8,17 @@
 .ex-1-square:hover{
     background: red;;
 }
+/* uso la proprietà :hover per far si che quando l'utente passi sopra col mouse il quadrato diventi rosso */
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 3s;
 }
+.ex-2-square:active{
+    width: 100%;
+}
+/*  suo la proprietà active, per far si che quando l'utente faccia 'Click' sul quadrato diventi un retangolo di larghezza 100% */
 .ex-3-square {
     width: 100px;
     height: 100px;
