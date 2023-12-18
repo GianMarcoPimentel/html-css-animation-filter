@@ -79,7 +79,16 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+.ex-9-img:hover{
+    border-radius: 20px;
+
+    filter: sepia(0.8) grayscale(1);
+
+    transform: translate(-100px);
+}
+/* Con al proprietà transform:translate() sposto l'immagine */
 .ex-10-icon {
     font-size: 60px;
 }
