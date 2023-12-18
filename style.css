@@ -89,9 +89,25 @@
     transform: translate(-100px);
 }
 /* Con al proprietà transform:translate() sposto l'immagine */
+@keyframes caricamento {
+    0%{
+        transform:rotate(1Turn);
+    }
+}
 .ex-10-icon {
     font-size: 60px;
+
+    animation-name: caricamento ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* 
+    posso sintetizzare la scrittura cosi : 
+    animation: caricamento 4s linear infinite;
+    */
+
 }
+/* Indico tuttele carattestiche dell'animazione all'elemento che voglio animare, si da un name,una duration, interation-count (quando volte volgio che si ripeta,iteri il conteggio dell'animazione, e il timing-function in che modo voglio che funzioni */
 .ex-11-icon {
     font-size: 60px;
 }
