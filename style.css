@@ -86,7 +86,7 @@
 
     filter: sepia(0.8) grayscale(1);
 
-    transform: translate(-100px);
+    transform: scale(2);
 }
 /* Con al proprietà transform:translate() sposto l'immagine */
 @keyframes caricamento {
