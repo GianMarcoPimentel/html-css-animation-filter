@@ -101,7 +101,7 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-direction: reverse;
+    animation-direction: normal;
     /* 
     posso sintetizzare la scrittura cosi : 
     animation: caricamento 4s linear infinite;
@@ -161,7 +161,7 @@
     width: 60px;
     height: 20px;
 }
-/* esercizio12 */
+/* Esercizio 12 */
 .ex-12-button:hover .ex-12-top-white {
     animation-name: ButtonTop;
     animation-duration: 4s;
@@ -176,7 +176,7 @@
         
     }
     100%{
-        left: 10%;:
+        left: 10%;
     }
 }
 .ex-12-button:hover .ex-12-bottom-white {
@@ -185,11 +185,41 @@
 @keyframes ButtonBottom {
     0%{
         left: 50%;
+        top: 100%;
     }
     50%{
         left: 0%;
+        top: 100%;
     }
     100%{
         left: 50%;
+        top: 100%;
     }
 }
+/* Fine esercicio 12 */
+
+/* Esercicio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation: GiroCompletoTop 10s infinite;
+}
+@keyframes GiroCompletoTop {
+    0%{
+        left: 10%;
+        
+    }
+    25%{
+        left: calc(100% - 60px);
+    }
+    50%{
+        left: calc(100% - 60px);
+        top: calc(100% - 60px);
+    }
+    75%{
+        left: 0%;
+        top: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+/* Fine Esercizio 13 */
