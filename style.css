@@ -5,7 +5,7 @@
 
     transition: 4s;
 }
-.ex-1-square:hover{
+.ex-1-square:hover { 
     background: red;;
 }
 /* uso la proprietà :hover per far si che quando l'utente passi sopra col mouse il quadrato diventi rosso */
@@ -15,7 +15,7 @@
     background: red;
     transition: 3s;
 }
-.ex-2-square:active{
+.ex-2-square:active {
     width: 100%;
 }
 /*  suo la proprietà active, per far si che quando l'utente faccia 'Click' sul quadrato diventi un retangolo di larghezza 100% */
@@ -25,7 +25,7 @@
     background: red;
     transition: 2s;
 }
-.ex-3-square:hover{
+.ex-3-square:hover {
     border-radius: 50%;
 }
 /* Uso la proprietà border-radius per cambiare il bordo del quadrato e far si che diventi un rettangolo */
@@ -35,7 +35,7 @@
     background: red;
     transition: 2s;
 }
-.ex-4-square:hover{
+.ex-4-square:hover {
     opacity: 0;
 }
 /* Uso la prorpietà opacity:0 per far si che il quadrato svanisca piano piano quando l'utente va on hover col mous*/
@@ -46,19 +46,36 @@
     background: red;
     transition: 2s;
 }
-.ex-5-square:hover{
+.ex-5-square:hover {
    transform: scale(1.5);
 }
-.ex-5-square:active{
+.ex-5-square:active {
     transform: scale(0.7);
 }
 /* Uso la proprieà transform e uso la funziona scale(1.5) per ingrandirla quando l'utente è on hover , e scale(0.7) quando l'utente fa click sul quadrato */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
-.ex-6-img:hover{
+.ex-6-img:hover {
     filter: grayscale(1);
 }
+/* Per rendere un'immagine in bianco e nero devo usare il filtro grayscale() */
+.ex-7-img {
+    transition: 2s;
+}
+.ex-7-img:hover{
+    filter: grayscale(0.5) sepia(0.6);
+}
+/* Aggiungo l'effetto sepia() */
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    border-radius: 20px;
+
+    filter: sepia(0.8) grayscale(1);
+}
+/* Aggiungo l'effetto al bordo */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
