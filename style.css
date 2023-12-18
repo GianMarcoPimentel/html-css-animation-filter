@@ -188,15 +188,15 @@
 }
 @keyframes ButtonBottom {
     0%{
-        left: 50%;
+        right: 20%;
         top: 100%;
     }
     50%{
-        left: 0%;
+        right: calc(100% - 60px);
         top: 100%;
     }
     100%{
-        left: 50%;
+        right: 20%;
         top: 100%;
     }
 }
@@ -206,24 +206,66 @@
 .ex-13-button:hover .ex-13-top-white{
     animation: GiroCompletoTop 10s infinite;
 }
+/* Divido le percentuali del giro in 5 sezioni differenziando le percentuali in base alla differenza della distazna da percorrere*/
 @keyframes GiroCompletoTop {
     0%{
         left: 10%;
+        top: -10px;
         
     }
-    25%{
-        left: calc(100% - 60px);
+    30%{
+        left: calc(100% - 30px);
+        top: -10px;
     }
-    50%{
-        left: calc(100% - 60px);
-        top: calc(100% - 60px);
+    45%{
+        left: calc(100% - 30px);
+        top: 100%;
     }
-    75%{
+    70%{
         left: 0%;
-        top: calc(100% - 60px);
+        top: 100%;
+    }
+    85%{
+        left: -19px;/* Padding che ha il div tra la linea e il margine iniziale */
+        top: -10px;
     }
     100%{
         left: 10%;
+        top: -10px;
     }
 }
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: GiroCompletoBottom 10s infinite;
+}
+/* Stesso ragionamento del GiroCompletoTop */
+@keyframes GiroCompletoBottom {
+    0%{
+        right: 20%;
+        top: 100%;
+    }
+    30%{
+        right: calc(100% - 40px);
+        top: 100%;
+    }
+    45%{
+        right: calc(100% - 40px);
+        top: -10px;
+    }
+    70%{
+        right: 0px;
+        top: -10px;
+    }
+    85%{
+        right: -19px;
+        top: 100%;
+    }
+    100%{
+        right: 20%;
+        top: 100%;
+    }
+}
+
+
+
+
 /* Fine Esercizio 13 */
